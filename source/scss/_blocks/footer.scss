@@ -1,10 +1,223 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
-.footer {
-  background-color: #151515;
+/* footer */
+
+.footer__style {
+  background: #434343;
+}
+
+.footer__block {
+  height: 555px;
+  max-width: 1400px;
+  padding-top: 100px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-left: 110px;
+}
+
+.navigation_list {
+  width: 380px;
+}
+
+.menu__header {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+  border-bottom: 380px solid #666666;
+  border-width: 1px;
+  padding-bottom: 23px;
+}
+
+.position__nav {
+  padding-right: 230px;
+  margin-bottom: 28px;
+}
+
+.position__info {
+  width: 380px;
+
+}
+
+.position__customer {
+  margin-bottom: 28px;
+}
+
+.position__connect {
+  margin-bottom: 25px;
+}
+
+.menu__nav {
+  margin-bottom: 15px;
+}
+
+.nav_link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.mail__block {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect_block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 25px;
+} 
+
+.mail__input {
+  width: 299px;
+  height: 40px;
+  border: none;
+  background: #666666;
+}
+
+.mail__input::placeholder {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #EBEBEB;
+  padding: 9px 324px 9px 17px;
+}
+
+.input__btn {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 7px 20px;
+}
+
+.finish {
+  display: flex;
+  gap: 60px;
+  margin-top: 14px;
+  border-top: 1px solid #666666;
+  padding-top: 22px;
+}
+
+.form__item {
+  display: flex;
+  gap: 25px;
+}
+
+.form__label {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.form__label:hover {
+  cursor: pointer;
+  color: #C29974;
+}
+
+/* company rating */
+
+.simple__rating {
+  position: relative;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.simple__rating::before {
+  content: "★★★★★";
+  display: block;
+}
+
+.simple-rating__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.simple-rating__item {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.simple-rating__label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
   color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+}
+
+.simple-rating__label::before {
+  content: "★";
+  display: block;
+  transition: color #836E5B;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+  color: #836E5B;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+  color: #C29974;
+}
+
+/* end COMPANY RATING */
+
+.li__list {
+  display: flex;
+  /* gap: 109px; */
+  margin-left: 98px;
+}
+
+.text_copyr {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 25px;
+}
+
+.text__web-d {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A2A2A2;
+}
+
+.text_margin {
+  margin-left: 109px;
 }
