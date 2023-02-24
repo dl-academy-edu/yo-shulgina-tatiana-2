@@ -20,3 +20,33 @@
     display: table;
   }
 }
+
+@mixin footer-nav {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+  border-bottom: 380px solid #666666;
+  border-width: 1px;
+  padding-bottom: 23px;
+}
+
+@mixin footer-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+@mixin finish {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
