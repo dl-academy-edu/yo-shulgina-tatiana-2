@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+        <title>DL Academy</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    
+        <script>
+          var docElement = document.documentElement;
+          docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+    
+        <!-- Favicon -->
+    
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- endbuild -->
+      </head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="container">
+            <h1 class="page__title">GRID</h1>
+            <ul class="breadcrumbs">
+                @@include('blocks/breadcrumbs.html', {
+                    "breadcrumbsLink": "breadcrumbs__link",
+                    "breadcrumbsPage": "Home",
+                    "breadcrumbsActiv": "breadcrumbs__activ",
+                    "breadcrumbsActivPage": "Grid"
+                })
+            </ul>
+        </section>
+        <section class="wrapper">
+            <h2 class="wrapper__head"></h2>
+            <div class="wrapper__box_one wrapper__box_flex">
+                <ul class="box__flex">
+                    <li>
+                        <a class="box__flex__title" href="#">IPHONE 6S</a>  
+                    </li>
+                    <li>
+                        <p class="box__flex__item">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+                    </li>
+                    <li>
+                        <a class="box__flex__link" href="#">Learn more or visit an Apple Store today</a>
+                    </li>
+                </ul>
+                <ul class="box__flex_img">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/IPHONE6S.png",
+                        "imgAlt": "IPHONE 6S",
+                        "imgWidth": "249",
+                        "imgHeight": "345",
+                    })
+                </ul>
+            </div>
+            <div class="wrapper__box_two">
+                <ul class="box_two">
+                    <li>
+                        <a class="box__flex__title" href="#">LEARN MORE</a>  
+                    </li>
+                    <li>
+                        <p class="box_two__item">How to Use Rotary Evaporator in Chemical Labs</p>
+                    </li>
+                    <li>
+                        <a class="box_two__link" href="#">Download now</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_three">
+                <ul class="box_three">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/new brands.png",
+                        "imgAlt": "New Brands",
+                        "imgWidth": "314",
+                        "imgHeight": "164",
+                    })
+                    <li>
+                        <p class="box_three__item">Our Brand New Keyboard</p>
+                    </li>
+                    <li>
+                        <a class="box_three__link" href="#">LEARN ›</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_four">
+                <ul class="box_four__list">
+                    <li>
+                        <a class="box_four__list_title" href="#">IMAC.RETINA</a>  
+                    </li>
+                    <li>
+                        <p class="box_four__list_item">Hardly a month passes these days where</p>
+                    </li>
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/monitor.png",
+                        "imgAlt": "Monitor",
+                        "imgWidth": "352",
+                        "imgHeight": "164",
+                    })
+                </ul>
+                <ul class="box_four__block">
+                    <li>
+                        <p class="box_four__block__description">OApple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+                    </li>
+                    <li>
+                        <a class="box_four__block__link" href="#">DOWNLOAD NOW ›</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_five">
+                <ul class="box_five">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/disk.png",
+                        "imgAlt": "Old disk",
+                        "imgWidth": "300",
+                        "imgHeight": "300",
+                    })
+                    <li>
+                        <a class="box_five__title" href="#">iCloud</a>  
+                    </li>
+                    <li>
+                        <p class="box_five__item">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                    </li>
+                    <li>
+                        <a class="box_five__btn" href="#">LEARN MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_six">
+                <a class="box_six__rang" href="#">BEST CHOICE</a>
+                <ul class="box_six__list">
+                    <li>
+                        <a class="box_six__list_title" href="#">Much MuchBetter Experience</a>  
+                    </li>
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/laptop.png",
+                        "imgAlt": "laptop",
+                        "imgWidth": "700",
+                        "imgHeight": "275",
+                    })
+                </ul>
+            </div>
+            <div class="wrapper__box_seven">
+                <ul class="box_seven">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/play.png",
+                        "imgAlt": "Play pult",
+                        "imgWidth": "303",
+                        "imgHeight": "167",
+                    })
+                    <li>
+                        <p class="box_seven__item">Games ourpasion</p>
+                    </li>
+                    <li>
+                        <a class="box_seven__link" href="#">LEARN ›</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_eight">
+                <ul class="box_eight">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/icon/camera.svg",
+                        "imgAlt": "Insta",
+                        "imgWidth": "59",
+                        "imgHeight": "59",
+                    })
+                    <li>
+                        <a class="box_eight__link" href="#">Follow me ›</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__box_nine">
+                <ul class="box_nine">
+                    @@include('blocks/gridbox.html', {
+                        "img": "./img/TV.png",
+                        "imgAlt": "Old TV",
+                        "imgWidth": "271",
+                        "imgHeight": "215",
+                    })
+                    <li>
+                        <p class="box_nine__item">More than just a display,  it’s a vision</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    @@include('blocks/footer.html')    
+</body>
+</html>
