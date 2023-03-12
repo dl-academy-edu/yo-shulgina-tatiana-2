@@ -20,7 +20,12 @@
 @import "blog";
 @import "catalog";
 @import "toys";
+@import "grid";
+@import "animation";
+@import "svg";
+@import "bootstrap";
 @import "_blocks/container";
+@import "_blocks/breadcrumbs";
 @import "_blocks/footer";
 @import "_blocks/header";
 @import "fonts";
@@ -136,10 +141,10 @@
   padding: 17px 44px 226px 28px;
 }
 
-.category__list {
-  display: flex;
+// .category__list {
+//   display: flex;
   
-}
+// }
 
 .p__one {
   padding-top: 1px;

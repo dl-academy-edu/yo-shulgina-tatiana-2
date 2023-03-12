@@ -95,39 +95,61 @@ li {
 
 .breadcrumbs {
   display: flex;
-  gap: 22px;
+  // gap: 22px;
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   color: #1E0606;
-  /* margin-top: 15px; */
+  &__link {
+    @include breadcr;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+  }
+  &__link::after {
+    content: "";
+    background-image: url('../img/icon/rightbr.svg');
+    background-position: center;
+    padding: 0px 24px;
+    background-repeat: no-repeat;
+    background-color: none;
+    margin-top: 7px;
+  }
+  &__activ {
+    @include breadcr;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #1E0606;
+    opacity: 0.5;
+  }
 }
 
-.br__link {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
-  color: #1E0606;
-}
+// .br__link {
+//   font-family: 'Crimson Text';
+//   font-style: italic;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 26px;
+//   color: #1E0606;
+// }
 
-.br__link-two {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: capitalize;
-  color: #1E0606;
-  opacity: 0.5;
-}
+// .br__link-two {
+//   font-family: 'Crimson Text';
+//   font-style: italic;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 26px;
+//   text-transform: capitalize;
+//   color: #1E0606;
+//   opacity: 0.5;
+// }
 
-.img__breadcrumbs {
-  margin-top: 7px;
-}
+// .img__breadcrumbs {
+//   margin-top: 7px;
+// }
 
 /* pagination */
 

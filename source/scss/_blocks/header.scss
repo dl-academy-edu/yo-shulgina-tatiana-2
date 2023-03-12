@@ -2,11 +2,39 @@
     display: flex; /*задает блок*/
     margin-top: 50px; /*отступ сверху*/
     align-items: center;
+    @media (min-width: 375px) and (max-width: 768px) {
+      margin-left: 60px;
+    }
+    // @media (min-width: 0px) and (max-width: 375px) {
+    //     margin-left: 0px;
+    // }
     &__nav {
       display: flex;
     }
     &__logo {
       margin-right: 60px;
+      min-width: 100px;
+      min-height: 52px;
+      @media (min-width: 375px) and (max-width: 768px) {
+        width: 62px;
+        height: 32px;
+      }
+      @media (min-width: 375px) and (max-width: 768px) {
+          margin-right: 55px;
+      }
+      @media (min-width: 375px) and (max-width: 1131px) {
+          margin-right: 45px;
+      }
+      @media (min-width: 375px) and (max-width: 1112px) {
+          margin-right: 33px;
+      }
+      @media (min-width: 375px) and (max-width: 1091px) {
+          margin-right: 28px;
+      }
+      @media (min-width: 0px) and (max-width: 375px) {
+          width: 42px;
+          height: 22px;
+      }
       &:hover {
         opacity: 0.6;
       }
@@ -16,6 +44,18 @@
     }
     &__list {
       display: flex;
+      @media (min-width: 0px) and (max-width: 768px) {
+        display: none;
+      }
+      @media (min-width: 375px) and (max-width: 1131px) {
+          gap: 0px 17px;
+      }
+      @media (min-width: 375px) and (max-width: 1112px) {
+          gap: 0px 13px;
+      }
+      @media (min-width: 375px) and (max-width: 1091px) {
+          gap: 0px 12px;
+      }
     }
     &__link {
       font-family: 'Open Sans';
@@ -35,6 +75,18 @@
     }
     &__search {
       margin-right: 27px;
+      @media (min-width: 375px) and (max-width: 768px) {
+        margin-left: 450px; 
+      }
+      @media (min-width: 375px) and (max-width: 1131px) {
+          margin-left: 416px;
+      }
+      @media (min-width: 375px) and (max-width: 1112px) {
+          margin-left: 390px;
+      }
+      @media (min-width: 375px) and (max-width: 1091px) {
+          margin-left: 265px;
+      }
     }
     &__list-contact {
       font-family: 'Open Sans';
@@ -47,6 +99,9 @@
       text-transform: uppercase;
       color: #1E0606;
       margin-right: 1px;
+    }
+    @media (min-width: 375px) and (max-width: 1131px) {
+      min-height: 20px;
     }
   }
   

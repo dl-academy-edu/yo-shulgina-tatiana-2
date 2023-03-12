@@ -26,13 +26,12 @@
     <section class="container">
         <h1 class="title__catalog">Category Products</h1>
         <ul class="breadcrumbs">
-            <li>
-                <a class="br__link" href="/">Home</a>
-            </li>
-            <li class="img__breadcrumbs">
-                <img src="../img/icon/rightbr.svg" alt="Right" width="8" height="12">
-            </li>
-            <li><p class="br__link-two">Catalog</p></li>
+            @@include('blocks/breadcrumbs.html', {
+                "breadcrumbsLink": "breadcrumbs__link",
+                "breadcrumbsPage": "Home",
+                "breadcrumbsActiv": "breadcrumbs__activ",
+                "breadcrumbsActivPage": "Catalog"
+            })
         </ul>
         <ul class="catalog__wrapper">
             <li class="product__place product__one">
