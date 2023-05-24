@@ -20,3 +20,101 @@
     display: table;
   }
 }
+
+@mixin footer-nav {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA;
+  border-bottom: 380px solid #666666;
+  border-width: 1px;
+  padding-bottom: 23px;
+}
+
+@mixin footer-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+@mixin finish {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin crimson {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1E0606;
+}
+
+@mixin osans {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1E0606;
+}
+
+@mixin buttonLink {
+  padding: 9px 22px 9px 22px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background: #000000;
+}
+
+@mixin H1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+@mixin H2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+@mixin breadcr {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin lato700 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+}
+
+@mixin lato500 {
+  font-family: 'Lato';
+  font-weight: bold;
+  font-style: normal;
+  // font-style: normal;
+  // font-weight: 500;
+}
+

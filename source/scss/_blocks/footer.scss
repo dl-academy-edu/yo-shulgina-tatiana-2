@@ -1,10 +1,203 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
-.footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+/* footer */
+
+.footer__style {
+  background: #434343;
 }
+
+.footer__block {
+  height: 555px;
+  max-width: 1400px;
+  padding-top: 100px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-left: 110px;
+}
+
+.navigation {
+  width: 380px;
+  &__title {
+    @include footer-nav;
+    &-one {
+      padding-right: 230px;
+      margin-bottom: 28px;
+    }
+  }
+  &__menu {
+    margin-bottom: 15px;
+    &_link {
+      @include footer-link;
+    }
+  }
+
+}
+
+.info {
+  width: 380px;
+  &__title {
+    @include footer-nav;
+    &-two {
+      margin-bottom: 28px;
+    }
+  }
+  &__menu {
+    margin-bottom: 15px;
+    &_link {
+      @include footer-link;
+    } 
+  }
+}
+
+.connect__title {
+  margin-bottom: 25px;
+  &-three {
+    @include footer-nav;
+  }
+}
+
+.mail__block {
+  display: flex;
+  flex-direction: row;
+  &_input {
+    width: 299px;
+    height: 40px;
+    border: none;
+    background: #666666;
+    &::placeholder {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      color: #EBEBEB;
+      padding: 9px 324px 9px 17px;
+    }
+  }
+  &_btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 7px 20px;
+    &:hover {
+      background: #C29974;
+    }
+    &:active {
+      background: #CFAF91;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 25px;
+} 
+
+.finish {
+  display: flex;
+  gap: 60px;
+  margin-top: 14px;
+  border-top: 1px solid #666666;
+  padding-top: 22px;
+  &__list {
+    display: flex;
+    margin-left: 98px;
+  }
+  &__text {
+    @include finish;
+    &_one {
+      color: #FFFFFF;
+      margin-left: 25px;
+    }
+    &_two {
+      color: #A2A2A2;
+      margin-left: 109px;
+    }
+    &_three {
+      color: #A2A2A2;
+    }
+  }
+}
+
+.form__rating {
+  display: flex;
+  gap: 25px;
+  &_label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    &:hover {
+      cursor: pointer;
+      color: #C29974;
+    }
+  }
+}
+
+/* company rating */
+
+.rating {
+  position: relative;
+  font-size: 17px;
+  display: inline-block;
+  &::before {
+    content: "★★★★★";
+    display: block;
+  }
+  &__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    &_input {
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+    }
+    &_label {
+      flex: 0 0 20%;
+      height: 100%;
+      cursor: pointer;
+      color: #fff;
+      &::before {
+        content: "★";
+        display: block;
+        transition: color #836E5B;
+      }
+    }
+  }
+}
+
+.rating__items_label:hover,
+.rating__items_label:hover ~ .rating__items_label,
+.rating__items_label:checked ~ .rating__items_label:hover {
+  color: #836E5B;
+}
+
+.rating__items_input:checked,
+.rating__items_input:checked ~ .rating__items_label {
+  color: #C29974;
+}
+
+/* end COMPANY RATING */
+
+

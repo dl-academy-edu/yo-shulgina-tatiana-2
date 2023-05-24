@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-
     <title>DL Academy</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -22,19 +21,215 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+    @@include('blocks/header.html')
+    <main>
+        <section class="banner container">
+        <div class="banner__in">
+            <div class="btn__column">
+                <p class="p__one">01</p>
+                <ul class="btn__block">
+                    <li class="line__position">
+                        <button type="button" class="btn__line-one"></button>
+                    </li>
+                    <li class="line__position">
+                        <button type="button" class="btn__line"></button>
+                    </li>
+                    <li class="line__position">
+                        <button type="button" class="btn__line"></button>
+                    </li>
+                    <li class="line__position">
+                        <button type="button" class="btn__line"></button>
+                    </li>
+                </ul>                  
+            </div>
+            <div class="banner__inner">
+                <h1 class="title">THE OOH NOO COLLECTION</h1>
+                <p class="notion">Designed in Slovenia</p>
+                <button type="button" class="btn_window btn__js">EXPLORE NOW</button>
+                <img class="img_banner" src="./img/monster.png" alt="Monster" width="635" height="461">
+            </div>
         </div>
-      </main>
-      @@include('blocks/footer.html')
+        <div class="utp">
+            <p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </div>
+        </section>
+        <section class="container">
+            <h2 class="category__title">Category Products</h2>
+            <ul class="category__list">
+                @@include('blocks/category.html', {
+                    "productPlace": "category__list_place",
+                    "productClass": "category__list_place-one",
+                    "linkProductClass": "category__list_link",
+                    "img": "img/sweater.png",
+                    "ProductAlt": "Сhildrens sweater",
+                    "ProductWidth": "244",
+                    "ProductHeight": "177",
+                    "product": "APPAREL KIDS",
+                    "linkProduct": "#",
+                })
+                @@include('blocks/category.html', {
+                    "productPlace": "category__list_place",
+                    "productClass": "category__list_place-two",
+                    "linkProductClass": "category__list_link",
+                    "img": "img/sock.png",
+                    "ProductAlt": "Gift sock",
+                    "ProductWidth": "208",
+                    "ProductHeight": "244",
+                    "product": "HOLIDAY SHOP",
+                    "linkProduct": "#",
+                })
+                @@include('blocks/category.html', {
+                    "productPlace": "category__list_place",
+                    "productClass": "category__list_place-three",
+                    "linkProductClass": "category__list_link",
+                    "img": "img/deer.jpg",
+                    "ProductAlt": "Deer wooden figurine",
+                    "ProductWidth": "270",
+                    "ProductHeight": "270",
+                    "product": "TOYS",
+                    "linkProduct": "toys.html",
+                })
+                @@include('blocks/category.html', {
+                    "productPlace": "category__list_place",
+                    "productClass": "category__list_place-four",
+                    "linkProductClass": "category__list_link",
+                    "img": "img/skateboard.png",
+                    "ProductAlt": "Skateboard",
+                    "ProductWidth": "240",
+                    "ProductHeight": "250",
+                    "product": "ACCESSORIES",
+                    "linkProduct": "#",
+                })
+            </ul> 
+        <div class="selector">
+            <button type="button" class="selector__control_left"></button>
+            <button type="button" class="selector__control_right"></button>
+            @@include('blocks/text.html', {
+                "textClass": "selector__text",
+                "textContent": "Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.",
+            })
+        </div>      
+        </section>
+        <section class="delivery container">
+            <img src="./img/dress.jpg" alt="Cocktail Dress" width="480" height="559">
+        <div class="delivery__list">
+            <h2 class="delivery__list_title">Delivery</h2>
+            <ul class="delivery__menu">
+                @@include('blocks/delivery.html', {
+                    "deliveryLink": "delivery__menu_link",
+                    "deliveryMenu": "Delivery",
+                })
+                @@include('blocks/delivery.html', {
+                    "deliveryLink": "delivery__menu_link",
+                    "deliveryMenu": "Guarantee",
+                })
+                @@include('blocks/delivery.html', {
+                    "deliveryLink": "delivery__menu_link",
+                    "deliveryMenu": "Credit",
+                })
+            </ul>
+            @@include('blocks/text.html', {
+                "textClass": "delivery__text",
+                "textStyle": "delivery__text_one",
+                "textContent": "Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.",
+            })
+            @@include('blocks/text.html', {
+                "textClass": "delivery__text",
+                "textStyle": "delivery__text_two",
+                "textContent": "What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!",
+            })
+            <a href="#" class="delivery__link delivery__link_place">LEARN MORE</a>
+        </div> 
+        </section>
+    </main>
+    <div class="container">
+        <ul class="partner_logo">
+            @@include('blocks/partner.html', {
+                "img": "./img/mail.png",
+                "altText": "Logo mail.ru",
+                "elementWidth": "193",
+                "elementHeight": "60",
+                "linkAdress": "https://mail.ru/",
+            })
+            @@include('blocks/partner.html', {
+                "img": "./img/apple.png",
+                "altText": "Logo Apple",
+                "elementWidth": "179",
+                "elementHeight": "61",
+                "linkAdress": "https://www.apple.com/",
+            })
+            @@include('blocks/partner.html', {
+                "img": "./img/eltex.png",
+                "altText": "Logo Eltex",
+                "elementWidth": "216",
+                "elementHeight": "46",
+                "linkAdress": "https://eltex-co.com/",
+            })
+            @@include('blocks/partner.html', {
+                "img": "./img/owox.png",
+                "altText": "Logo Owox",
+                "elementWidth": "211",
+                "elementHeight": "40",
+                "linkAdress": "https://www.owox.com/",
+            })
+        </ul>
     </div>
-
+    <section class="common container">
+    <div class="block__design">
+        <h2 class="block__design__subtitle">Design Life Kids</h2>
+        <p class="block__design__caption">About Us</p>
+        @@include('blocks/text.html', {
+            "textClass": "block__design__text",
+            "textContent": "Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.",
+        })
+        <a href="/pages/catalog.html" class="link__buy link__sizing">BUY NOW</a>
+    </div>
+    <div class="maps__box">
+        <h2 class="maps__box__subtitle">Contacts</h2>
+        @@include('blocks/text.html', {
+            "textClass": "maps__box__text",
+            "textContent": "Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.",
+        })
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.6849235898358!2d49.28748761565532!3d53.50982357015485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4168797f9a8510e9%3A0x5af0ee3dab85a41c!2sProspekt%20Stepana%20Razina%2C%2044%2C%20Tolyatti%2C%20Samarskaya%20oblast&#39;%2C%20445027!5e0!3m2!1sen!2sru!4v1668965937280!5m2!1sen!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+    @@include('blocks/footer.html')
+    <div class="popup">
+        <div class="popup__wr">
+            <form method="post" action="#" class="contact__form">
+                <div class="container label__wrapper">
+                    <label class="contact__label">Name</label>
+                    <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                </div>
+                <div class="container input__element">
+                    <div class="label__wrapper">
+                        <label class="contact__label">Phone</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                    <div class="container label__wrapper">
+                        <label class="contact__label">Email</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li class="label__wrapper">
+                            <label class="contact__label">Message</label>
+                            <textarea name="Message" cols="30" rows="10"></textarea>
+                        </li>
+                        <li class="checkbox_position">
+                            <input class="checkbox_input" id="checkbox" type="checkbox">
+                            <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                        </li>
+                    </ul>
+                    <button class="btn__submit" type="submit">SUBMIT</button>    
+                </div> 
+            </form>
+            <button type="button" class="close"></button>
+        </div> 
+        <div class="overlay"></div>
+    </div>
     <script src="js/app.js" defer></script>
+    <script src="./js/popup.js"></script>
   </body>
 </html>

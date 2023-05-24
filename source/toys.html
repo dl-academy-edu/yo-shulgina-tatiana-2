@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+        <title>DL Academy</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    
+        <script>
+          var docElement = document.documentElement;
+          docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+    
+        <!-- Favicon -->
+    
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- endbuild -->
+      </head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section>
+            <h1>Toy for kids</h1>
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><img src="./img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li><a href="/catalog.html">Catalog</a></li>
+                <li><img src="./img/icon/right.svg" alt="Right" width="8" height="12"></li>
+                <li><p>Toys</p></li>
+            </ul>
+            <form action="">
+                <label for="Cost">Cost</label>
+                <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100"> 
+                <fieldset>
+                    <legend>Color</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Black</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Blue</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">Green</label>
+                        </li>
+                        <li>
+                            <input type="checkbox"> 
+                            <label for="">White</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Delivery" id="Free shipping">
+                            <label for="Free shipping">Free shipping</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Delivery" id="Fast shipping">
+                            <label for="Fast shipping">Fast shipping</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Amount</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Amount" id="0-5">
+                            <label for="0-5">0-5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Amount" id="10-20">
+                            <label for="10-20">10-20</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Amount" id="20-50">
+                            <label for="20-50">20-50</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="button">APPLY</button>
+            </form>
+        </section>                                
+        <section>
+            <h2 class="h2__?">Catalog</h2> 
+            <ul>
+                <li><img src="./img/case.png" alt="Shark chair cover" width="380" height="385"></li>
+                <li><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+                <li>$60.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/frames.png" alt="Decorative frames made of brass" width="380" height="385"></li>
+                <li><a href="#">BRASS DECO FRAMES</a></li>
+                <li>$66.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/apron.png" alt="CIBO FULL APRON" width="380" height="385"></li>
+                <li><a href="#">CIBO FULL APRON</a></li>
+                <li>$60.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/gumball.png" alt="GATCHA GUMBALL MACHINE"></li>
+                <li><a href="#">GATCHA GUMBALL MACHINE</a></li>
+                <li>$56.00 USD</li>
+            </ul>
+            <ul>
+                <li><img src="./img/candle.png" alt="Scented paraffin candle" width="380" height="385"></li>
+                <li><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+                <li>$29.00 USD</li>
+               </ul>
+            <ul>
+                <li><img src="./img/candle2.png" alt="Magic spinning candle" width="380" height="382"></li>
+                <li><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
+                <li>$56.00 USD</li>
+            </ul> 
+            <button type="button">prev</button>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul> 
+            <button type="button">next</button>          
+        </section>
+    </main>
+    @@include('blocks/footer.html') 
+</body>
+</html>
